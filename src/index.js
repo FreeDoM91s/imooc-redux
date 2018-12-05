@@ -11,11 +11,12 @@ import thunk from 'redux-thunk';
 import reducers from './reducer'
 import Auth from './Auth';
 import Dashboard from './Dashboard';
-
+import './config';
+import 'antd-mobile/dist/antd-mobile.css';
 const reduxDevtools = window.devToolsExtension?window.devToolsExtension():f=>f;
 const store = createStore(reducers, compose(applyMiddleware(thunk), reduxDevtools));
 
-console.log(store.getState());
+//console.log(store.getState());
 //登录  没有登录信息 统一跳转到login
 
 //页面 导航+显示+注销

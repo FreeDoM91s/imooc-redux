@@ -54,9 +54,6 @@ app.get('/data',function(req,res){
     });
 });
 
-
-
-
 app.listen(9093,function(){
     console.log('Node app start at port 9093');
 });
